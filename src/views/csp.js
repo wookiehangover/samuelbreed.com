@@ -6,6 +6,7 @@ module.exports = [
   `script-src 'self'`,
   `connect-src 'self'`,
   `img-src 'self'${staticEdge}`,
-  `style-src 'self' 'sha256-Wd5QTAWValERuPK74eX4gF4bxsRa37Q35ccDTxeOCYk='`,
+    `style-src 'self' 'sha256-DVVgTR/QdE8RSVAAnVcMRBvLaXqv+3YlxGzgSu8PlT4='`,
   `manifest-src 'self'${staticEdge}`
 ].join('; ')
+
