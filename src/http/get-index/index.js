@@ -2,8 +2,18 @@ const Main = require('@architect/views/main.js')
 const csp = require('@architect/views/csp.js')
 
 // Customize your site by changing the data below
-exports.handler = async function Index () {
+exports.handler = async function Index (request) {
   let body = Main()
+
+    if (request.path === '/robots.txt') {
+        return {
+            headers: {
+                'content-text': 'text/plain; charset=utf8'
+            },
+            body: `User-agent: *
+Disallow:`
+        }
+    }
 
   return {
     headers: {

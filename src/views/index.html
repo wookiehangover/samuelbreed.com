@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>Samuel Breed builds systems, teams, and software</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="" />
+        <meta name="description" content="Personal website of Samuel Breed, software developer" />
         <meta name="keywords" content="" />
         <link rel="apple-touch-icon" sizes="180x180" href="/_static/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/_static/favicon-32x32.png">
@@ -92,7 +92,13 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>Runtime Restrictions</li>
+                        <li>
+                            Runtime Restrictions
+                            <ul>
+                                <li>The best offense is a good defense. Treat the browser like an untrustable runtime: don't execute any code that you didn't author.</li>
+                                <li>Content Security Policy is a somewhat blunt but very effective tool for eliminating what's allowed to run on your website.</li>
+                                <li>The best 3rd party scripts are <em>no</em> 3rd party scripts.</li>
+                        </li>
                     </ol>
                     <p>
                         As such, this website uses a <a href="https://www.w3.org/TR/CSP3/" title="Content Security Policy specification">Content Security Policy</a> that's extremely restrictive. This is for everyone's benefit. I'm all for keeping whatever JavaScript is ferried along in browser extensions from interfering with this page's runtime, despite that there's nothing interesting going on.
@@ -115,7 +121,7 @@
             </section>
             <hr/>
             <footer>
-                <em>See also: <a href="http://wookiehangover.com" title="Wookie Hangover dot com">wookiehangover.com</a>
+                <em>See also: <a href="http://wookiehangover.com" title="Wookie Hangover dot com">wookiehangover.com</a></em>
             </footer>
        </main>
     </body>
