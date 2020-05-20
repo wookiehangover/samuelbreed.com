@@ -3,10 +3,11 @@ const staticEdge = process.env.NODE_ENV === 'production'
 
 module.exports = [
   `default-src 'none'`,
-  `script-src 'self'`,
+  `script-src 'self' https://cdn.ampproject.org`,
   `connect-src 'self'`,
   `img-src 'self'${staticEdge}`,
-    `style-src 'self' 'sha256-DVVgTR/QdE8RSVAAnVcMRBvLaXqv+3YlxGzgSu8PlT4='`,
+  `style-src 'self' 'unsafe-inline'`,
+    // `style-src 'self' 'sha256-DVVgTR/QdE8RSVAAnVcMRBvLaXqv+3YlxGzgSu8PlT4='`,
   `manifest-src 'self'${staticEdge}`
 ].join('; ')
 
