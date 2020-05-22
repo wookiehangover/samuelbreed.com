@@ -1,25 +1,69 @@
 <!doctype html>
-<html lang="en">
+<html amp lang="en">
     <head>
         <meta charset="utf-8" />
         <title>Samuel Breed builds systems, teams, and software</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Personal website of Samuel Breed, software developer" />
-        <meta name="keywords" content="" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/_static/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/_static/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/_static/favicon-16x16.png">
-        <link rel="manifest" href="/_static/site.webmanifest">
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <!-- <meta name="description" content="Personal website of Samuel Breed, software developer" /> -->
+        <!-- <meta name="keywords" content="" /> -->
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href="/_static/apple-touch-icon.png"> -->
+        <!-- <link rel="icon" type="image/png" sizes="32x32" href="/_static/favicon-32x32.png"> -->
+        <!-- <link rel="icon" type="image/png" sizes="16x16" href="/_static/favicon-16x16.png"> -->
+        <!-- <link rel="manifest" href="/_static/site.webmanifest"> -->
+        <link rel="canonical" href="https://samuelbreed.com/">
+        <script type="application/ld+json">
+          {
+            "@context": "http://schema.org",
+            "@type": "NewsArticle",
+            "headline": "Open-source framework for publishing content",
+            "datePublished": "2015-10-07T12:02:41Z",
+            "image": [
+              "logo.jpg"
+            ]
+          }
+        </script>
+        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+        <style amp-custom>
+          :root {
+            --bg-color: rgb(22, 36, 68);
+            --text-color: whitesmoke;
+            --link-color: whitesmoke;
+          }
+
+          @media (prefers-color-scheme: light) {
+            :root {
+              --bg-color: white;
+              --text-color: black;
+              --link-color: blue;
+            }
+          }
+
+          body {
+            font-family: 'Georgia', Times, serif;
+            font-size: 1.3em;
+            line-height: 1.4;
+            max-width: 28em;
+            background: var(--bg-color);
+            color: var(--text-color);
+          }
+
+          main {
+            margin: 2em;
+          }
+
+          h1, h2 {
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-decoration: underline;
+          }
+
+          a {
+            color: var(--link-color);
+            font-weight: bold;
+          }
+        </style>
     </head>
     <body>
-        <style>
-         body {
-             font-family: Georgia, serif;
-             font-size: 1.5em;
-             max-width: 28em;
-             margin: 2em;
-         }
-        </style>
         <main>
             <h1>Samuel Breed builds systems, teams, and software</h1>
             <p>
@@ -60,7 +104,7 @@
                         Not to harp on the boring details, but I have some opinions about web publishing:
                     </p>
                     <p>
-                        I did not use a complex tool to make this website. I specifically chose to eschew the modern dev tool chains, blogging platforms, and web frameworks because I think that there's a simplicty of an html document that's easily forgotten and rarely appreciated. I'm not judging other techniques for publishing things on the web, but it's worth pointing out that the old ways still work.
+                        I did not use a complex tool to compose this website. (Deploying it, however, is a different story) I specifically chose to eschew the modern dev tool chains, blogging platforms, and web frameworks because I think that there's a simplicty of an html document that's easily forgotten and rarely appreciated. I'm not judging other techniques for publishing things on the web, but it's worth pointing out that the old ways still work.
                     </p>
                     <p>
                         Not having a build step or a line of <code>JavaScript</code> was beyond compare. But writing anything complex like this would be too hard. I scaled the barrier to enter this easy world of minimalist web authoring more than 20 years ago in a <code>textarea</code> on Geocities.
@@ -121,7 +165,7 @@
             </section>
             <hr/>
             <footer>
-                <em>See also: <a href="http://wookiehangover.com" title="Wookie Hangover dot com">wookiehangover.com</a></em>
+                <em>See also: <a href="http://wookiehangover.com" title="My other website: Wookie Hangover dot com">wookiehangover.com</a></em>
             </footer>
        </main>
     </body>
